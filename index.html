@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+        // Function to redirect after a delay
+        function redirect() {
+            // Specify the URL you want to redirect to
+            var redirectTo = "https://www.example.com";
+
+            // Specify the delay in milliseconds (e.g., 3000 milliseconds = 3 seconds)
+            var delay = 3000;
+
+            // Set a timeout to redirect after the specified delay
+            setTimeout(function () {
+                window.location.href = redirectTo;
+            }, delay);
+        }
+
+        // Call the redirect function when the page loads
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <!-- You can add additional content or a loading spinner here -->
+</body>
+</html>
